@@ -28,19 +28,19 @@ npm install chirpchirp --global
 	```
 1. Tweet
 	```bash
-	chirpchirp send <message>
+	chirpchirp send --message <message>
 	```
 
 ### Example
 
 ```bash
-chirpchirp send "Hello, World!"
+chirpchirp send --message "Hello, World!"
 ```
 
 ## Advanced usage
 
 Command | Explanation
 --- | ---
-`	chirpchirp send --twitter-api-key "TWITTER_API_KEY" --twitter-api-secret-key "TWITTER_API_SECRET_KEY" --twitter-access-token "TWITTER_ACCESS_TOKEN" --twitter-access-token-secret "TWITTER_ACCESS_TOKEN_SECRET" <message>` | Instead of using the environmental variables
-`npx chirpchirp send <message>` | Running without installation
+`	chirpchirp send --message <message> --twitter-api-key "TWITTER_API_KEY" --twitter-api-secret-key "TWITTER_API_SECRET_KEY" --twitter-access-token "TWITTER_ACCESS_TOKEN" --twitter-access-token-secret "TWITTER_ACCESS_TOKEN_SECRET"` | Instead of using the environmental variables
+`npx chirpchirp send --message <message>` | Running without installation
 `chirpchirp --help` | To get all the available options
