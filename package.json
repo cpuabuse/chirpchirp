@@ -3,7 +3,7 @@
 		"chirpchirp": "build/chirpchirp/src/index.js"
 	},
 	"name": "chirpchirp",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "Twitter cli via app auth",
 	"scripts": {
 		"build": "tsc"
@@ -24,6 +24,7 @@
 	},
 	"homepage": "https://github.com/cpuabuse/chirpchirp#readme",
 	"dependencies": {
+		"commander": "^4.1.1",
 		"twitter": "^1.7.1"
 	},
 	"types": "build/chirpchirp/src/index.d.ts",
@@ -32,7 +33,6 @@
 		"@types/twitter": "^1.7.0",
 		"@typescript-eslint/eslint-plugin": "^2.24.0",
 		"@typescript-eslint/parser": "^2.24.0",
-		"commander": "^4.1.1",
 		"eslint": "^6.8.0",
 		"eslint-config-airbnb-base": "^14.1.0",
 		"eslint-config-prettier": "^6.10.0",
