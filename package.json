@@ -1,0 +1,46 @@
+{
+	"bin": {
+		"chirpchirp": "build/chirpchirp/src/index.js"
+	},
+	"name": "chirpchirp",
+	"version": "0.0.1",
+	"description": "Twitter cli via app auth",
+	"scripts": {
+		"build": "tsc && ncp package.json build/chirpchirp/package.json"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/cpuabuse/chirpchirp.git"
+	},
+	"keywords": [
+		"twitter",
+		"cli",
+		"tweet"
+	],
+	"author": "cpuabuse.com",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/cpuabuse/chirpchirp/issues"
+	},
+	"homepage": "https://github.com/cpuabuse/chirpchirp#readme",
+	"dependencies": {
+		"twitter": "^1.7.1"
+	},
+	"types": "build/chirpchirp/src/index.d.ts",
+	"devDependencies": {
+		"@types/node": "^13.9.2",
+		"@types/twitter": "^1.7.0",
+		"@typescript-eslint/eslint-plugin": "^2.24.0",
+		"@typescript-eslint/parser": "^2.24.0",
+		"commander": "^4.1.1",
+		"eslint": "^6.8.0",
+		"eslint-config-airbnb-base": "^14.1.0",
+		"eslint-config-prettier": "^6.10.0",
+		"eslint-plugin-import": "^2.20.1",
+		"eslint-plugin-mocha": "^6.3.0",
+		"eslint-plugin-prettier": "^3.1.2",
+		"ncp": "^2.0.0",
+		"prettier": "^1.19.1",
+		"typescript": "^3.8.3"
+	}
+}

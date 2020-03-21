@@ -1,0 +1,19 @@
+# Ignore
+azure-pipelines.yml
+/build
+coverage
+.eslintrc.yml
+.gitignore
+*.map
+.nyc_output
+.nycrc.yml
+.prettierrc.yml
+script
+*.ts
+test
+test-results.xml
+tsconfig.json
+
+# Unignore
+!*.d.ts
+!/build/chirpchirp/src
