@@ -89,13 +89,14 @@ async function main(): Promise<boolean> {
 
 	// Send
 	let commandMode: string = "default"; // Default mode
-	let sendStatus: string | undefined = ""; // Empty string so that twitter hopefully refuses to post, if something went wrong
+	let sendMessage: string | undefined = ""; // Empty string so that twitter hopefully refuses to post, if something went wrong
 	program
-		.command("send [status]")
+		.command("send")
 		.description("send a tweet")
-		.action(function(status) {
+		.option("-m, --message <message>", "message to send")
+		.action(function(subProgram) {
 			commandMode = "send";
-			sendStatus = status;
+			sendMessage = subProgram.message;
 		});
 
 	// Parse args
@@ -142,11 +143,15 @@ async function main(): Promise<boolean> {
 	// Process sending and do sanity/value check
 	switch (commandMode) {
 		case "send":
-			if (sendStatus === undefined) {
+			if (sendMessage === undefined) {
+				// Gracefully exit; Node.js only application
+				// eslint-disable-next-line no-console
+				console.error("[\u001b[31mFAILED\u001b[0m] Neither message nor media was specified");
 				return false;
 			}
 			try {
-				send(client, sendStatus);
+				console.log(sendMessage);
+				send(client, sendMessage);
 			} catch {
 				return false;
 			}
