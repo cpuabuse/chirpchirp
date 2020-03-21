@@ -38,7 +38,7 @@ const envTwitterAccessTokenSecret: string | undefined = process.env.TWITTER_ACCE
 async function main(): Promise<boolean> {
 	// Package file
 	let packageContent: Promise<Buffer> = new Promise(function(resolve, reject) {
-		readFile(join(__dirname, "..", "package.json"), (err, data) => {
+		readFile(join(__dirname, "..", "..", "..", "package.json"), (err, data) => {
 			if (err === undefined) {
 				reject(err);
 			} else {

@@ -3,10 +3,10 @@
 		"chirpchirp": "build/chirpchirp/src/index.js"
 	},
 	"name": "chirpchirp",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "Twitter cli via app auth",
 	"scripts": {
-		"build": "tsc && ncp package.json build/chirpchirp/package.json"
+		"build": "tsc"
 	},
 	"repository": {
 		"type": "git",
