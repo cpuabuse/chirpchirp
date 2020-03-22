@@ -52,7 +52,7 @@ $Message = "Beavers
 Squirrels
 Bears"
 
-node node_modules/chirpchirp/build/chirpchirp/src/index.js send --message $Message
+node node_modules/chirpchirp/build/release/index.js send --message $Message
 ```
 
 #### Spaces and multiline support

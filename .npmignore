@@ -17,4 +17,4 @@ tsconfig.json
 
 # Unignore
 !*.d.ts
-!/build/chirpchirp/src
+!/build/release
