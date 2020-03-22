@@ -4,15 +4,11 @@
 		"target": "es2018",
 		"module": "commonjs",
 		"lib": ["es2020"],
-		"outDir": "build/chirpchirp",
 		"strict": true,
 		"moduleResolution": "node",
-		"declaration": true,
-		"sourceMap": true,
 		"esModuleInterop": true
 	},
 	"typedocOptions": {
 		"out": "build/typedoc"
-	},
-	"include": ["src/**/*", "test/**/*"]
+	}
 }

@@ -1,0 +1,9 @@
+{
+	"extends": "../tsconfig.json",
+	"compilerOptions": {
+		"declaration": true,
+		"outDir": "../build/release",
+		"removeComments": true
+	},
+	"include": ["../src/**/*"]
+}

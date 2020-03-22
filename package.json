@@ -1,12 +1,14 @@
 {
 	"bin": {
-		"chirpchirp": "build/chirpchirp/src/index.js"
+		"chirpchirp": "build/release/index.js"
 	},
 	"name": "chirpchirp",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"description": "Twitter cli via app auth",
 	"scripts": {
-		"build": "tsc"
+		"build": "npm run build:release && build:test",
+		"build:release": "tsc -p tsconfig/release.json",
+		"build:test": "tsc -p tsconfig/test.json"
 	},
 	"repository": {
 		"type": "git",
@@ -41,6 +43,7 @@
 		"eslint-plugin-prettier": "^3.1.2",
 		"ncp": "^2.0.0",
 		"prettier": "^1.19.1",
+		"typedoc": "^0.17.2",
 		"typescript": "^3.8.3"
 	}
 }

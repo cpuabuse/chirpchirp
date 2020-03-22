@@ -4,7 +4,7 @@ Twitter cli via app authentication.
 
 ## About
 
-Straightforward way of sending, supporting multiline messages. Written natively in TypeScript.
+Straightforward way of sending tweets, supporting multiline messages. Written natively in TypeScript.
 
 ## Prerequisites
 
@@ -57,10 +57,17 @@ node node_modules/chirpchirp/build/chirpchirp/src/index.js send --message $Messa
 
 #### Spaces and multiline support
 
-`+`: Working
-`=`: Non applicable
-`!`: Spaces work, multiline doesn't (workaround above)
-`-`: Not working (workaround above)
+`+`
+: Working
+
+`=`
+: Non applicable
+
+`!`
+: Spaces work, multiline doesn't (workaround above)
+
+`-`
+: Not working (workaround above)
 
 Command used | Global | Local| Not installed
 --- | --- | --- | ---|
