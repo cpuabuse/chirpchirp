@@ -29,7 +29,7 @@
 		"commander": "^4.1.1",
 		"twitter": "^1.7.1"
 	},
-	"types": "build/chirpchirp/src/index.d.ts",
+	"types": "build/release/index.d.ts",
 	"devDependencies": {
 		"@types/node": "^13.9.2",
 		"@types/twitter": "^1.7.0",

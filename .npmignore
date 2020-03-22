@@ -12,6 +12,7 @@ script
 *.ts
 test
 test-results.xml
+/tsconfig
 tsconfig.json
 
 # Unignore
