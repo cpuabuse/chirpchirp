@@ -3,10 +3,10 @@
 		"chirpchirp": "build/release/index.js"
 	},
 	"name": "chirpchirp",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"description": "Twitter cli via app auth",
 	"scripts": {
-		"build": "npm run build:release && build:test",
+		"build": "npm run build:release && npm run build:test",
 		"build:release": "tsc -p tsconfig/release.json",
 		"build:test": "tsc -p tsconfig/test.json"
 	},

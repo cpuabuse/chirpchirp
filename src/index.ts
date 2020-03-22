@@ -52,7 +52,7 @@ async function main(): Promise<boolean> {
 
 	// Version
 	try {
-		program.version(JSON.parse((await packageContent).toString()).version);
+		program.version(`v${JSON.parse((await packageContent).toString()).version}`);
 	} catch {
 		// Gracefully exit; Node.js only application
 		// eslint-disable-next-line no-console
