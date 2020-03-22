@@ -2,5 +2,7 @@
 *
 
 # Unignore
-!/build/release/*
-!/build/release/**/*
+/LICENSE
+/README.md
+!/src/*
+!/src/**/*
